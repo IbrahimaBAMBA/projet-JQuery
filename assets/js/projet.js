@@ -17,6 +17,5 @@ $(function(){
       text: descripArticle,
       class:'descriptionDansPanier'
     }).appendTo('#ArticlePanierNum'+NombreArticleSelec);
-
   });
 });

@@ -4,8 +4,6 @@
   text-align: center;
 }
 /* Fin CSS header / Nav */
-
-
 .panier{
   background-color: green;
 }
@@ -24,4 +22,13 @@ h2 {
 #carteMere {
   text-align: center;
 }
+#processeur {
+  text-align: center;
+}
+#carteGraphique {
+  text-align: center;
+}
+.cartegraphique {
+  width: 220px;
+  height: 220px;
 /* Fin CSS Body */
