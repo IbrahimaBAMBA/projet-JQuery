@@ -26,5 +26,8 @@ h2 {
 #processeur {
   text-align: center;
 }
+.cartegraphique {
+  width: 220px;
+  height: 220px;
+}
 /* Fin CSS Body */
-
