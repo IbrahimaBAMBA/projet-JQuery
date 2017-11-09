@@ -2,14 +2,20 @@ $(function(){
   var NombreArticleSelec = 0;
   $('.article').click(function(){
     var article = $(this).attr('id');
-    var imgArticle = $(this + img).attr('src');
-    var descriptArticle = $(this).attr('descriptionimgArticle');
+    var imgArticle = $(this).children('img').attr('src');
+    var descripArticle = $(this).children('.description').text();
     NombreArticleSelec++;
-    console.log(imgArticle);
     $('<div/>',{
       id: 'ArticlePanierNum'+NombreArticleSelec,
-      class: 'panier col-lg-12',
-      text: 'Article',
+      class: 'articleDansPanier',
     }).appendTo('#panier');
+    $('<img/>',{
+      src: imgArticle,
+      class: 'imageDansPanier'
+    }).appendTo('#ArticlePanierNum'+NombreArticleSelec);
+    $('<p/>',{
+      text: descripArticle,
+      class:'descriptionDansPanier'
+    }).appendTo('#ArticlePanierNum'+NombreArticleSelec);
   });
 });
