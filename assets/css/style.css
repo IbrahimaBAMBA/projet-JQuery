@@ -1,6 +1,6 @@
 /* Début CSS header / Nav */
 #dropProduct li a {
-  width: 250px;
+  width: 280px;
   text-align: center;
 }
 /* Fin CSS header / Nav */
@@ -10,6 +10,13 @@ h1 {
   font-size: 52px;
 }
 h2 {
+  text-align: center;
+}
+.cartemere {
+  width: 220px;
+  height: 220px;
+}
+#carteMere {
   text-align: center;
 }
 /* Fin CSS Body */
