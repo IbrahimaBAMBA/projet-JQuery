@@ -8,50 +8,28 @@
   <title>Ibrahima jquery</title>
 </head>
 <header>
-  <div class="row">
-    <div class="container">
+  <div class="container-fluid">
+    <div class="row">
       <div class="col-lg-12">
-        <nav class="navbar navbar-default">
-          <div class="navbar-header">
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produit : <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#alimentation">Alimentations</a></li>
-                    <li><a href="#barrette">Barrettes de RAM</a></li>
-                    <li><a href="#carteGraphique">Cartes Graphique</a></li>
-                    <li><a href="#carteMere">Cartes Mère</a></li>
-                    <li><a href="#processeur">Processeurs</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="navbar-form navbar-left">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Rechercher">
-                </div>
-                <button type="submit" class="btn btn-default">Rechercher</button>
-              </form>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#panier">Panier</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
+        <ul class="nav nav-pills nav-justified">
+          <li role="presentation" class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Produit <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" id="dropProduct">
+              <li><a href="#alimentation">Alimentations</a></li>
+              <li><a href="#barrette">Barrettes de RAM</a></li>
+              <li><a href="#carteGraphique">Cartes Grahpique</a></li>
+              <li><a href="#carteMere">Cartes Mère</a></li>
+              <li><a href="#processeur">Processeurs</a></li>
+            </ul>
+          </li>
+          <li role="presentation" class="active"><a href="#articles">Articles</a></li>
+          <li role="presentation" class="active"><a href="#panier">Panier</a></li>
+        </ul>
       </div>
     </div>
   </div>
-
 </header>
 <body>
   <div class="container-fluid">
@@ -67,3 +45,56 @@
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/projet.js"></script>
 </html>
+      <div class="row" id="carteMere">
+        <h1 id="articles">Articles : </h1><br/>
+        <h2>Cartes Mère : </h2>
+        <div id ="carte_mere1" class="col-lg-3">
+          <img class="cartemere" src="assets/img/images.jpeg" title="carte mère 1" alt="carte mère" />
+          <p><strong>Carte mère ASRock P4I65G</strong>
+            <hr>
+            Socket 478 for Intel® Pentium® 4 / Celeron® D (Prescott, Northwood, Willamette) processors
+            Intel® 865G Chipset
+            FSB800/533/400MHz processor, and H-T Technology
+            Supports Dual Channel DDR400 (DDR x 2 DIMMs)
+            Untied Overclocking : During Overclocking, FSB enjoys better margin due to fixed
+          </p>
+        </div>
+        <div id="carte_mere2" class="col-lg-3">
+          <img class="cartemere" src="assets/img/image1.jpeg" title="carte mère 2" alt="carte mère" />
+           <p><strong>Carte mère 3DS XL</strong>
+             <hr>
+             Socket 478 for Nintendo 3ds xl/ Celeron® D (Prescott, Northwood, Willamette) processors
+             3DS XL865G Chipset
+             FSB800/533/400MHz processor, and H-T Technology
+             Supports Dual Channel DDR400 (DDR x 2 DIMMs)
+             Untied Overclocking : During Overclocking, FSB enjoys better margin due to fixed
+           </p>
+        </div>
+        <div id="carte_mere3" class="col-lg-3">
+          <img class="cartemere" src="assets/img/images2.jpeg" title="carte mère 3" alt="carte mère" />
+          <p><strong>Carte mère Lenovo thinkpad</strong></p>
+          <hr>
+          Socket 478 for Thinkpad i6 / Celeron® D (Prescott, Northwood, Willamette) processors
+          HP thinkpad865G Chipset
+          FSB800/533/400MHz processor, and H-T Technology
+          Supports Dual Channel DDR400 (DDR x 2 DIMMs)
+          Untied Overclocking : During Overclocking, FSB enjoys better margin due to fixed
+        </div>
+        <div id="carte_mere4" class="col-lg-3">
+          <img class="cartemere" src="assets/img/img.jpeg" title="carte mère 4" alt="carte mère" />
+          <p><strong>Carte mère Asus</strong></p>
+          <hr>
+          Socket 478 for Asus i5 / Celeron® D (Prescott, Northwood, Willamette) processors
+          HP Asus Chipset
+          FSB800/533/400MHz processor, and H-T Technology
+          Supports Dual Channel DDR400 (DDR x 2 DIMMs)
+          Untied Overclocking : During Overclocking, FSB enjoys better margin due to fixed
+        </div>
+      </div>
+  </div>
+  <script src="assets/js/projet.js"></script>
+  <script src="assets/js/jquery-3.2.1.js"></script>
+  <script src="assets/js/jquery-ui.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  </html>
+
