@@ -12,5 +12,4 @@ $(function(){
       text: 'Article',
     }).appendTo('#panier');
   });
-
 });
