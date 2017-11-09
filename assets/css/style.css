@@ -1,3 +1,7 @@
 /* Début CSS header / Nav */
+#dropProduct li a {
+  width: 250px;
+  text-align: center;
 
+}
 /* Fin CSS header / Nav */
