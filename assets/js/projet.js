@@ -14,7 +14,8 @@ $(function(){
   //   jQuery.each( panier, function( i, val ) {
   //   $(titre).appendTo( '#basket' );
   // });
+    tableau.push(eval(refArticle));
+  var NombreArticleSelec = 0;
+    console.log(tableau);
   });
-
-
 });
