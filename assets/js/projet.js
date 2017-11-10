@@ -9,6 +9,7 @@ $(function(){
     var titleArticle = ParentOfButton.children('.titleArticle').text();
     eval('var ' + refArticle + ' ={ titre:titleArticle, img:imgArticle, desp:descripArticle, price:price};');
     tableau.push(eval(refArticle));
+  var NombreArticleSelec = 0;
     console.log(tableau);
   });
 });
