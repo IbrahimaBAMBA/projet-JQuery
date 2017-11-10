@@ -1,14 +1,14 @@
 $(function(){
-  var tableau = [];
+  var panier = [];
   $('button[name=addPanier]').click(function(){
     var ParentOfButton = $(this).parents('.article');
-    var refArticle = ParentOfButton.children('.reference').children('strong').children('.ref').text();
+    var refArticle = $('.ref').text();
     var imgArticle = ParentOfButton.children('img').attr('src');
-    var descripArticle = ParentOfButton.children('.description').text();
-    var price = ParentOfButton.children('.price').text();
-    var titleArticle = ParentOfButton.children('.titleArticle').text();
+    var descripArticle = $('.description').text();
+    var price = $('.price').text();
+    var titleArticle = $('.titre').text();
     eval('var ' + refArticle + ' ={ titre:titleArticle, img:imgArticle, desp:descripArticle, price:price};');
-    tableau.push(eval(refArticle));
-    console.log(tableau);
+    panier.push(eval(refArticle));
+    console.log(panier);
   });
 });
