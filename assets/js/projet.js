@@ -9,6 +9,7 @@ $(function(){
     var titleArticle = ParentOfButton.children('.titreArticle').text().toString();
     eval('var ' + refArticle + ' ={ titre:titleArticle, img:imgArticle, descrip:descripArticle, price:price};');
     panier.push(eval(refArticle));
+
      jQuery.each( panier, function( i, val ) {
        var imgg = val.img;
        var titre = val.titre;
@@ -21,5 +22,13 @@ $(function(){
       //  }
      });
 
+    console.log(eval(refArticle).titre);
+  //
+  //   jQuery.each( panier, function( i, val ) {
+  //   $(titre).appendTo( '#basket' );
+  // });
+    tableau.push(eval(refArticle));
+  var NombreArticleSelec = 0;
+    console.log(tableau);
   });
 });
