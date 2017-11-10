@@ -14,3 +14,11 @@ $(function(){
     console.log(price);
   });
 });
+$(function(){
+$('img').mouseover(function(){
+  $(this).css('width','270px');   <!--'this' sert à repeter ce qui a été fait-->
+  $(this).mouseout(function(){
+  $(this).css('width', '220px');
+  });
+});
+});
