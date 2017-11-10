@@ -23,12 +23,12 @@ $(function(){
      });
 
     console.log(eval(refArticle).titre);
-  //
-  //   jQuery.each( panier, function( i, val ) {
-  //   $(titre).appendTo( '#basket' );
-  // });
+    //
+    //   jQuery.each( panier, function( i, val ) {
+    //   $(titre).appendTo( '#basket' );
+    // });
     tableau.push(eval(refArticle));
-  var NombreArticleSelec = 0;
+    var NombreArticleSelec = 0;
     console.log(tableau);
   });
 });
